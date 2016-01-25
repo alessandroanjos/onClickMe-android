@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+	<RelativeLayout
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:layout_marginLeft="0dp"
+		android:layout_marginRight="0dp"
+		android:layout_marginTop="0dp"
+		android:layout_marginBottom="0dp">
+		<TextView
+			android:id="@+id/InformationName"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:textSize="18sp"
+			android:text="CONHEÇA NATAL"
+			android:gravity="center"
+			android:textColor="#ffffff"
+			android:background="#0F7B78" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="fill_parent"
+		android:layout_marginLeft="0dp"
+		android:layout_marginRight="0dp"
+		android:layout_marginTop="35dp"
+		android:layout_marginBottom="475dp" >
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="10dp"
+			android:background="#FFE39A3A" />
+	</RelativeLayout>
+
+
+	<RelativeLayout
+	        android:layout_height="fill_parent"
+	        android:layout_width="fill_parent"
+	        android:layout_marginLeft="30dp"
+			android:layout_marginRight="30dp"
+	        android:background="@drawable/list"
+	        android:paddingTop="10dp"
+	        android:layout_marginTop="70dp"
+	        android:layout_marginBottom="15dp" >
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="false"
+        android:layout_marginLeft="0dp"
+		android:layout_marginRight="0dp" 
+		android:layout_marginTop="30dp"
+		android:divider="@color/list_view_divider"
+		android:dividerHeight="2px"
+	
+	/>
+
+	<TextView
+	    android:id="@+id/tvInformationName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="5dp"
+	    android:text="Escolha seu destino"
+	    android:textColor="#0F7B78"
+	    android:textSize="18sp" />
+
+	<ImageView
+		android:id="@+id/listra_verde"
+		android:src="@drawable/listra"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_marginTop="25dp"
+		/>
+
+	</RelativeLayout>
+
+
+</RelativeLayout>
