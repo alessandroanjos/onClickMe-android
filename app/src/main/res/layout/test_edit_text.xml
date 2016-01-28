@@ -185,5 +185,32 @@
         </EditText>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reviewED"
+        android:layout_gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Voltar"
+            android:id="@+id/cancelRateBtn"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Avançar"
+            android:layout_weight="1"
+            android:onClick="avancarFragment"
+            android:id="@+id/submitRateBtn"
+            />
+
+    </LinearLayout>
+
 </LinearLayout>
     </ScrollView>
