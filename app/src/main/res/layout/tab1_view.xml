@@ -43,7 +43,6 @@
 	        android:layout_width="fill_parent"
 	        android:layout_marginLeft="30dp"
 			android:layout_marginRight="30dp"
-	        android:background="@drawable/list"
 	        android:paddingTop="10dp"
 	        android:layout_marginTop="70dp"
 	        android:layout_marginBottom="15dp" >
@@ -55,7 +54,6 @@
         android:layout_marginLeft="0dp"
 		android:layout_marginRight="0dp" 
 		android:layout_marginTop="30dp"
-		android:divider="@color/list_view_divider"
 		android:dividerHeight="2px"
 	
 	/>
@@ -71,7 +69,6 @@
 
 	<ImageView
 		android:id="@+id/listra_verde"
-		android:src="@drawable/listra"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:gravity="center"

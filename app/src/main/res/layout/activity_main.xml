@@ -25,7 +25,7 @@
         android:id="@+id/click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="< Click Me"
+        android:text=" Click Me"
         android:textSize="15sp"
         android:onClick="onClick"
         android:clickable="true"/>

@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Holo.Light">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

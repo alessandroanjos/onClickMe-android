@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/txt_subtype_information_name_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:background="#0F7B78" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:layout_weight="40" >
+
+                    <ImageView
+                        android:id="@+id/mainImageView"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/solar"
+                        android:layout_width="400dp"
+                        android:layout_height="300dp"
+                        android:opacity="translucent" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:id="@+id/enderecolayout"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/dadosdetail"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <LinearLayout android:id="@+id/imgmaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:background="#0F7B78"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:clickable="true"
+                            style="?android:attr/ratingBarStyleIndicator"
+                            android:id="@+id/dialog_ratingbar" android:layout_gravity="center"
+                            android:numStars="5" android:stepSize="1.0" android:rating="2"
+                            android:isIndicator="false"/>
+
+                        <TextView
+                            android:id="@+id/editText3"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="5.0"
+                            android:textSize="25dp"
+                            android:paddingLeft="20dp"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/black"
+                            android:ems="10" />
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:paddingLeft="1dp"
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/maps"
+                            />
+
+                        <ImageView
+                            android:id="@+id/alert"
+                            android:paddingLeft="1dp"
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/maps"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal" >
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="15dp"
+                            android:background="#FFE39A3A" />
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:paddingRight="145dp"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:text="IDADE/ NACIONALIDADE" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/desc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        >
+                        <WebView
+                            android:id="@+id/webView1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
